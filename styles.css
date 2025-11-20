@@ -1,1 +1,73 @@
 /*  your css code here. If applicable */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #a78bfa 0%, #c084fc 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    #buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+    }
+
+    .btn {
+      background-color: #6b46c1;
+      color: white;
+      border: none;
+      padding: 30px 50px;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      text-transform: lowercase;
+      min-width: 180px;
+    }
+
+    .btn:hover {
+      background-color: #553c9a;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn:active {
+      transform: translateY(-1px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .stop {
+      background-color: #6b46c1;
+    }
+
+    .stop:hover {
+      background-color: #553c9a;
+    }
+
+    .playing {
+      background-color: #8b5cf6;
+      animation: pulse 0.5s ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
